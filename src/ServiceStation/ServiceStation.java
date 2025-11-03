@@ -36,8 +36,7 @@ public class ServiceStation {
         for (int i = 1; i <= numberOfCars; i++) {
             Car car = new Car("C" + i, waitingQueue, mutex, empty, full);
             car.start();
-
-
+            Thread.sleep(1000);
         }
     sc.close();
     }
